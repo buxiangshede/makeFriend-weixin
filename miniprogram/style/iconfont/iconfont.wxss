@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3847330 */
+  src: url('//at.alicdn.com/t/c/font_3847330_82fahd5f72l.woff2?t=1672802062878') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3847330_82fahd5f72l.woff?t=1672802062878') format('woff'),
+       url('//at.alicdn.com/t/c/font_3847330_82fahd5f72l.ttf?t=1672802062878') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e6ac";
+}
+
+.icon-copy:before {
+  content: "\e744";
+}
+
+.icon-call:before {
+  content: "\e612";
+}
+
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
+}
+
+.icon-anniu-zan_o:before {
+  content: "\eba8";
+}
+
+.icon-Delete:before {
+  content: "\e609";
+}
+
+.icon-Home:before {
+  content: "\e60a";
+}
+
+.icon-bianji_editor:before {
+  content: "\e617";
+}
+
+.icon-bofang_play:before {
+  content: "\e618";
+}
+
+.icon-bofang_play-one:before {
+  content: "\e619";
+}
+
+.icon-guanbi_close:before {
+  content: "\e61a";
+}

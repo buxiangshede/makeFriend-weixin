@@ -1,0 +1,25 @@
+/* miniprogram/pages/friendList/friendList.wxss */
+.friend-list {
+  margin-top: 40rpx;
+}
+.friend-list-item {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx;
+  border-bottom: 1px dashed #b4b5b6;
+}
+.friend-list-item view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend-list-item image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.friend-list-gap {
+  margin-left: 20rpx;
+}

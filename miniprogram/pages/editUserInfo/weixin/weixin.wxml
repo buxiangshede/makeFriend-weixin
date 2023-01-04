@@ -1,0 +1,4 @@
+<view class="user-info-phone">
+  <button bindtap="handleBtn">设置微信号</button>
+  <input value="{{weixinNumber}}"  type="number" bindinput="handleText"/>
+</view>

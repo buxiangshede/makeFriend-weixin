@@ -1,0 +1,8 @@
+<movable-area class="move-area">
+  <movable-view  class="move-view" direction="horizontal" bindtap="handleAddFriend">
+  {{userMessage.nickName}}</movable-view>
+  <navigator url="{{'/pages/userInfo/userInfo?userId=' + userMessage._id }}">
+    <image src="{{userMessage.userPhoto}}" />
+    <view class="delete" bindtap="handleDelete">删除</view>
+  </navigator>
+</movable-area>

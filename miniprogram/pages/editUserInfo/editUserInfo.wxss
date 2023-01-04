@@ -1,0 +1,15 @@
+.edit-user-info {
+  margin-top: 40rpx;
+}
+.edit-user-list-item {
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx;
+  border-bottom: 1px dashed #b4b5b6;
+}
+.edit-user-list-tips {
+  font-size: 12px;
+  color: red;
+}

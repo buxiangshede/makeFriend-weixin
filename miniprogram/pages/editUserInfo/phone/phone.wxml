@@ -1,0 +1,4 @@
+<view class="user-info-phone">
+  <button bindtap="handleBtn">设置手机号</button>
+  <input value="{{phoneNumber}}"  type="number" bindinput="handleText"/>
+</view>

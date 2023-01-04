@@ -1,0 +1,5 @@
+<view class="near">
+<search></search>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="14" show-location bindmarkerTap="markerTap">
+  </map>
+</view>

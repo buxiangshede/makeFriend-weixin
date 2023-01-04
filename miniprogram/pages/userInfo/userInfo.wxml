@@ -1,0 +1,35 @@
+<view class="user-info-detail">
+<block wx:if="{{isHidden}}">
+  <button wx:if="{{isFriend}}">已是好友</button>
+  <button wx:else bindtap="handleAddFriend">添加好友</button>
+</block>
+
+  <view class="user-info-item"  >
+    <text>昵称：</text>
+    <text>{{detail.nickName}}</text>
+  </view>
+  <view class="user-info-item">
+    <text>头像：</text>
+    <image src="{{detail.userPhoto}}" />
+  </view>
+  <view class="user-info-item">
+    <text>个性签名：</text>
+    <text>{{detail.signature}}</text>
+  </view>
+  <view class="user-info-item">
+    <text>手机号：</text>
+    <block wx:if="{{isFriend}}">
+      <text class="item-gap"> {{detail.phoneNumber}}</text>
+      <call-phone wx:if="{{detail.phoneNumber}}" phoneNumber="{{detail.phoneNumber}}"></call-phone>
+    </block>
+    <text wx:else  class="item-gap"> 仅好友可见</text>
+  </view>
+  <view class="user-info-item">
+    <text>微信号：</text>
+    <block wx:if="{{isFriend}}">
+      <text class="item-gap">{{detail.weixinNumber}}</text>
+      <copy-text   wx:if="{{detail.weixinNumber}}" text="{{detail.weixinNumber}}"/>
+    </block>
+    <text wx:else class="item-gap"> 仅好友可见</text>
+  </view>
+</view>

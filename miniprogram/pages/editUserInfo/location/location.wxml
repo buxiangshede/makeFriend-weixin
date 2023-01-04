@@ -1,0 +1,5 @@
+<!--miniprogram/pages/location/location.wxml-->
+<view class="location-view">
+  <text>是否开启位置：</text>
+    <switch checked="{{isLocation}}" bindchange="switch1Change"/>
+</view>

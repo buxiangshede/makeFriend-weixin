@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src='javascripts/axios.min.js'></script>
+</head>
+
+<body>
+  <h1>
+    交友系统
+  </h1>
+  <label>上传图片：
+    <input type="file" id="uploadBtn" />
+  </label>
+  <script>
+    const uploadBtn = document.getElementById('uploadBtn');
+    uploadBtn.onchange = (e) => {
+      const file = e.target.files[0]
+      const params = new FormData();
+      params.append('file', file);
+      const config = {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      }
+      console.log('axios', axios)
+      axios.post('/uploadBannerImg', params, config).then(res => {
+        console.log(res.data)
+      })
+    }
+  </script>
+</body>
+
+</html>

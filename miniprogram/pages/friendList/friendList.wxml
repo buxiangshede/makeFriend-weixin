@@ -1,0 +1,13 @@
+<!--miniprogram/pages/friendList/friendList.wxml-->
+<view class="friend-list">
+  <text>好友列表：</text>
+  <navigator url="{{'../userInfo/userInfo?userId='+item._id}}" open-type="navigate"  wx:for="{{friendList}}">
+    <view class="friend-list-item">
+      <view>
+        <image src="{{item.userPhoto}}" />
+        <text class="friend-list-gap">{{item.nickName}}</text>
+      </view>
+      <text class="iconfont icon-xiangyoujiantou"></text>
+    </view>
+  </navigator>
+</view>

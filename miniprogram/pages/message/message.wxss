@@ -1,0 +1,6 @@
+.message {
+  padding:20rpx;
+}
+.message-text{
+  margin: 30rpx;
+}
